@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="html" lang="en-US" itemscope itemtype="http://schema.org/WebPage">
-{{ partial "head.html" . }}
 
+{{ partial "work_head.html" . }}
 <body
     class="page-template page-template-elementor_header_footer page page-id-7 wp-embed-responsive oceanwp-theme sidebar-mobile default-breakpoint content-full-width content-max-width page-header-disabled elementor-default elementor-template-full-width elementor-page elementor-page-7">
 
@@ -11,7 +11,8 @@
 
         <div id="wrap" class="clr">
 
-            {{ partial "header.html" . }}
+
+{{partial "header.html" . }}
 
             <main id="main" class="site-main clr">
 
@@ -45,7 +46,7 @@
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-image-box-wrapper">
                                                                 <figure class="elementor-image-box-img"><img
-                                                                        src="https://cloto.ca/wp-content/uploads/2019/03/washing-machine-1.svg"
+                                                                        src="{{"/img/washing-machine-1.svg" | relURL }}"
                                                                         title="washing-machine" alt="washing-machine" />
                                                                 </figure>
                                                                 <div class="elementor-image-box-content">
@@ -62,7 +63,7 @@
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-image-box-wrapper">
                                                                 <figure class="elementor-image-box-img"><img
-                                                                        src="https://cloto.ca/wp-content/uploads/2019/03/washing-machine-1.svg"
+                                                                        src="{{"/img/washing-machine-1.svg" | relURL }}"
                                                                         title="washing-machine" alt="washing-machine" />
                                                                 </figure>
                                                                 <div class="elementor-image-box-content">
@@ -79,7 +80,7 @@
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-image-box-wrapper">
                                                                 <figure class="elementor-image-box-img"><img
-                                                                        src="https://cloto.ca/wp-content/uploads/2019/03/washing-machine-1.svg"
+                                                                        src="{{"/img/washing-machine-1.svg" | relURL }}"
                                                                         title="washing-machine" alt="washing-machine" />
                                                                 </figure>
                                                                 <div class="elementor-image-box-content">
@@ -156,10 +157,12 @@
                                                                             <div
                                                                                 class="timeline-item__img elementor-post__thumbnail">
                                                                                 <img width="800" height="450"
-                                                                                    src="https://cloto.ca/wp-content/uploads/2019/03/download.jpg"
+                                                                                    src="{{"/img/download.jpg" | relURL }}"
                                                                                     class="attachment-full size-full"
                                                                                     alt=""
-                                                                                    srcset="https://cloto.ca/wp-content/uploads/2019/03/download.jpg 800w, https://cloto.ca/wp-content/uploads/2019/03/download-300x169.jpg 300w, https://cloto.ca/wp-content/uploads/2019/03/download-768x432.jpg 768w"
+                                                                                    srcset='{{"/img/download.jpg" | relURL }} 800w,
+                                                                                     {{"/img/download-300x169.jpg" | relURL }}300w,
+                                                                                      {{"/img/download-768x432.jpg" | relURL }} 768w'
                                                                                     sizes="(max-width: 800px) 100vw, 800px" />
                                                                             </div>
 
@@ -208,10 +211,12 @@
                                                                             <div
                                                                                 class="timeline-item__img elementor-post__thumbnail">
                                                                                 <img width="800" height="450"
-                                                                                    src="https://cloto.ca/wp-content/uploads/2019/03/schedule-pickup.jpg"
+                                                                                    src="{{"/img/schedule-pickup.jpg" | relURL }}"
                                                                                     class="attachment-full size-full"
                                                                                     alt=""
-                                                                                    srcset="https://cloto.ca/wp-content/uploads/2019/03/schedule-pickup.jpg 800w, https://cloto.ca/wp-content/uploads/2019/03/schedule-pickup-300x169.jpg 300w, https://cloto.ca/wp-content/uploads/2019/03/schedule-pickup-768x432.jpg 768w"
+                                                                                    srcset='{{"/img/schedule-pickup.jpg" | relURL }} 800w,
+                                                                                     {{"/img/schedule-pickup-300x169.jpg" | relURL }}300w, 
+                                                                                     {{"/img/schedule-pickup-768x432.jpg" | relURL }} 768w'
                                                                                     sizes="(max-width: 800px) 100vw, 800px" />
                                                                             </div>
 
@@ -259,10 +264,12 @@
                                                                             <div
                                                                                 class="timeline-item__img elementor-post__thumbnail">
                                                                                 <img width="800" height="450"
-                                                                                    src="https://cloto.ca/wp-content/uploads/2019/03/fill.jpg"
+                                                                                    src="{{"/img/fill.jpg" | relURL }}"
                                                                                     class="attachment-full size-full"
                                                                                     alt=""
-                                                                                    srcset="https://cloto.ca/wp-content/uploads/2019/03/fill.jpg 800w, https://cloto.ca/wp-content/uploads/2019/03/fill-300x169.jpg 300w, https://cloto.ca/wp-content/uploads/2019/03/fill-768x432.jpg 768w"
+                                                                                    srcset='{{"/img/fill.jpg" | relURL }} 800w,
+                                                                                     {{"/img/fill-300x169.jpg" | relURL }} 300w,
+                                                                                      {{"/img/fill-768x432.jpg"  | relURL }} 768w'
                                                                                     sizes="(max-width: 800px) 100vw, 800px" />
                                                                             </div>
 
@@ -312,10 +319,12 @@
                                                                             <div
                                                                                 class="timeline-item__img elementor-post__thumbnail">
                                                                                 <img width="800" height="450"
-                                                                                    src="https://cloto.ca/wp-content/uploads/2019/03/cloto-van.jpg"
+                                                                                    src="{{"/img/cloto-van.jpg" | relURL }}"
                                                                                     class="attachment-full size-full"
                                                                                     alt=""
-                                                                                    srcset="https://cloto.ca/wp-content/uploads/2019/03/cloto-van.jpg 800w, https://cloto.ca/wp-content/uploads/2019/03/cloto-van-300x169.jpg 300w, https://cloto.ca/wp-content/uploads/2019/03/cloto-van-768x432.jpg 768w"
+                                                                                    srcset='{{"/img/cloto-van.jpg" | relURL }} 800w,
+                                                                                     {{"/img/cloto-van-300x169.jpg"  | relURL }} 300w,
+                                                                                      {{"/img/cloto-van-768x432.jpg" | relURL }} 768w'
                                                                                     sizes="(max-width: 800px) 100vw, 800px" />
                                                                             </div>
 
@@ -364,7 +373,7 @@
                             </section>
                             <div class="elementor-element elementor-element-343e152e elementor-section-content-middle main-cta  elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
                                 data-id="343e152e" data-element_type="section" id="CTA"
-                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_image&quot;:{&quot;url&quot;:&quot;https:\/\/cloto.ca\/wp-content\/uploads\/2019\/03\/pattern-green-3.png&quot;,&quot;id&quot;:656},&quot;background_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;},&quot;background_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;}}">
+                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_image&quot;:{&quot;url&quot;:&quot;{{"/img/pattern-green-3.png" | relURL }}&quot;,&quot;id&quot;:656},&quot;background_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;},&quot;background_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;}}">
                                 <div class="elementor-container elementor-column-gap-default">
                                     <div class="elementor-row">
                                         <div class="elementor-element elementor-element-49424580 elementor-column elementor-col-50 elementor-top-column"
@@ -393,7 +402,7 @@
                                                     </div>
                                                     <div class="elementor-element elementor-element-53aa0017 elementor-widget__width-auto elementor-widget elementor-widget-global elementor-global-542 elementor-widget-inline-svg"
                                                         data-id="53aa0017" data-element_type="widget"
-                                                        data-settings="{&quot;svg&quot;:{&quot;url&quot;:&quot;https:\/\/cloto.ca\/wp-content\/uploads\/2019\/01\/app-store.svg&quot;,&quot;id&quot;:369},&quot;link&quot;:{&quot;url&quot;:&quot;https:\/\/itunes.apple.com\/us\/app\/cloto\/id1175238344&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;},&quot;maintain_ratio&quot;:&quot;yes&quot;}"
+                                                        data-settings="{&quot;svg&quot;:{&quot;url&quot;:&quot;{{"/img/app-store.svg" | relURL }}&quot;,&quot;id&quot;:369},&quot;link&quot;:{&quot;url&quot;:&quot;https:\/\/itunes.apple.com\/us\/app\/cloto\/id1175238344&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;},&quot;maintain_ratio&quot;:&quot;yes&quot;}"
                                                         data-widget_type="inline-svg.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-inline-svg-wrapper">
@@ -406,7 +415,7 @@
                                                     </div>
                                                     <div class="elementor-element elementor-element-579bbd92 elementor-widget__width-auto elementor-widget elementor-widget-global elementor-global-545 elementor-widget-inline-svg"
                                                         data-id="579bbd92" data-element_type="widget"
-                                                        data-settings="{&quot;svg&quot;:{&quot;url&quot;:&quot;https:\/\/cloto.ca\/wp-content\/uploads\/2019\/01\/google-play.svg&quot;,&quot;id&quot;:1220},&quot;link&quot;:{&quot;url&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=ca.cloto.userclient.android&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;},&quot;maintain_ratio&quot;:&quot;yes&quot;}"
+                                                        data-settings="{&quot;svg&quot;:{&quot;url&quot;:&quot;{{"/img/google-play.svg" | relURL }}&quot;,&quot;id&quot;:1220},&quot;link&quot;:{&quot;url&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=ca.cloto.userclient.android&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;},&quot;maintain_ratio&quot;:&quot;yes&quot;}"
                                                         data-widget_type="inline-svg.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-inline-svg-wrapper">
@@ -447,7 +456,7 @@
                                                         data-widget_type="image.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-image">
-                                                                <img src="https://cloto.ca/wp-content/uploads/elementor/thumbs/cloto-android-o4wt3c0pawpglqqvmchgm3kbinnytzvhe0zgo7gbui.png"
+                                                                <img src="{{"/img/cloto-android-o4wt3c0pawpglqqvmchgm3kbinnytzvhe0zgo7gbui.png" | relURL }}"
                                                                     title="cloto-android" alt="cloto-android" /> </div>
                                                         </div>
                                                     </div>
@@ -457,7 +466,7 @@
                                                         data-widget_type="image.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-image">
-                                                                <img src="https://cloto.ca/wp-content/uploads/elementor/thumbs/loto-ios-o4wt144f5zo36vyxkvy685q50wlrnq2ar1j6voqsje.png"
+                                                                <img src="{{"/img/loto-ios-o4wt144f5zo36vyxkvy685q50wlrnq2ar1j6voqsje.png" | relURL }}"
                                                                     title="loto-ios" alt="loto-ios" /> </div>
                                                         </div>
                                                     </div>
@@ -475,7 +484,7 @@
 
 
 
-            {{ partial "footer.html" .}}
+{{ partial "footer.html" . }}
 
         </div><!-- #wrap -->
 
@@ -495,7 +504,7 @@
 
 
     <div id="mobile-menu-search" class="clr">
-        <form method="get" action="https://cloto.ca/" class="mobile-searchform">
+        <form method="get" action="/" class="mobile-searchform">
             <input type="search" name="s" autocomplete="off" placeholder="Search" />
             <button type="submit" class="searchform-submit">
                 <i class="icon icon-magnifier"></i>
@@ -525,9 +534,9 @@
                                                 <div
                                                     class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
                                                     <video class="elementor-video"
-                                                        src="https://cloto.ca/wp-content/uploads/2019/02/Final-Cloto_1.mp4"
+                                                        src="{{"/video/Final-Cloto_1.mp4" | relURL }}"
                                                         controls="" controlsList="nodownload"
-                                                        poster="https://cloto.ca/wp-content/uploads/2019/02/video-poster.jpg"></video>
+                                                        poster="{{"/img/video-poster.jpg" | relURL }}"></video>
                                                 </div>
                                             </div>
                                         </div>
@@ -668,111 +677,109 @@
                                                         jQuery(document).ready(function ($) {
                                                             gformInitSpinner(3,
                                                                 'https://cloto.ca/wp-content/plugins/cloto/img/Ajax-loader.gif'
-                                                            );
+                                                                );
                                                             jQuery('#gform_ajax_frame_3').on('load',
-                                                                function () {
-                                                                    var contents = jQuery(this).contents()
-                                                                        .find('*').html();
-                                                                    var is_postback = contents.indexOf(
-                                                                        'GF_AJAX_POSTBACK') >= 0;
-                                                                    if (!is_postback) {
-                                                                        return;
-                                                                    }
-                                                                    var form_content = jQuery(this)
-                                                                        .contents().find(
-                                                                            '#gform_wrapper_3');
-                                                                    var is_confirmation = jQuery(this)
-                                                                        .contents().find(
-                                                                            '#gform_confirmation_wrapper_3')
-                                                                        .length > 0;
-                                                                    var is_redirect = contents.indexOf(
-                                                                        'gformRedirect(){') >= 0;
-                                                                    var is_form = form_content.length > 0 &&
-                                                                        !is_redirect && !is_confirmation;
-                                                                    var mt = parseInt(jQuery('html').css(
-                                                                        'margin-top'), 10) + parseInt(
-                                                                        jQuery('body').css(
-                                                                            'margin-top'), 10) + 100;
-                                                                    if (is_form) {
-                                                                        jQuery('#gform_wrapper_3').html(
-                                                                            form_content.html());
-                                                                        if (form_content.hasClass(
-                                                                                'gform_validation_error')) {
-                                                                            jQuery('#gform_wrapper_3')
-                                                                                .addClass(
-                                                                                    'gform_validation_error'
+                                                        function () {
+                                                                var contents = jQuery(this).contents()
+                                                                    .find('*').html();
+                                                                var is_postback = contents.indexOf(
+                                                                    'GF_AJAX_POSTBACK') >= 0;
+                                                                if (!is_postback) {
+                                                                    return;
+                                                                }
+                                                                var form_content = jQuery(this)
+                                                                    .contents().find(
+                                                                    '#gform_wrapper_3');
+                                                                var is_confirmation = jQuery(this)
+                                                                    .contents().find(
+                                                                        '#gform_confirmation_wrapper_3')
+                                                                    .length > 0;
+                                                                var is_redirect = contents.indexOf(
+                                                                    'gformRedirect(){') >= 0;
+                                                                var is_form = form_content.length > 0 &&
+                                                                    !is_redirect && !is_confirmation;
+                                                                var mt = parseInt(jQuery('html').css(
+                                                                    'margin-top'), 10) + parseInt(
+                                                                    jQuery('body').css(
+                                                                    'margin-top'), 10) + 100;
+                                                                if (is_form) {
+                                                                    jQuery('#gform_wrapper_3').html(
+                                                                        form_content.html());
+                                                                    if (form_content.hasClass(
+                                                                            'gform_validation_error')) {
+                                                                        jQuery('#gform_wrapper_3')
+                                                                            .addClass(
+                                                                                'gform_validation_error'
                                                                                 );
-                                                                        } else {
-                                                                            jQuery('#gform_wrapper_3')
-                                                                                .removeClass(
-                                                                                    'gform_validation_error'
-                                                                                );
-                                                                        }
-                                                                        setTimeout(function () {
-                                                                            /* delay the scroll by 50 milliseconds to fix a bug in chrome */
-                                                                            jQuery(document)
-                                                                                .scrollTop(jQuery(
-                                                                                        '#gform_wrapper_3'
-                                                                                    ).offset()
-                                                                                    .top - mt);
-                                                                        }, 50);
-                                                                        if (window['gformInitDatepicker']) {
-                                                                            gformInitDatepicker();
-                                                                        }
-                                                                        if (window[
-                                                                                'gformInitPriceFields']) {
-                                                                            gformInitPriceFields();
-                                                                        }
-                                                                        var current_page = jQuery(
-                                                                            '#gform_source_page_number_3'
-                                                                        ).val();
-                                                                        gformInitSpinner(3,
-                                                                            'https://cloto.ca/wp-content/plugins/cloto/img/Ajax-loader.gif'
-                                                                        );
-                                                                        jQuery(document).trigger(
-                                                                            'gform_page_loaded', [3,
-                                                                                current_page
-                                                                            ]);
-                                                                        window['gf_submitting_3'] = false;
-                                                                    } else if (!is_redirect) {
-                                                                        var confirmation_content = jQuery(
-                                                                            this).contents().find(
-                                                                            '.GF_AJAX_POSTBACK').html();
-                                                                        if (!confirmation_content) {
-                                                                            confirmation_content = contents;
-                                                                        }
-                                                                        setTimeout(function () {
-                                                                            jQuery(
-                                                                                    '#gform_wrapper_3'
-                                                                                    )
-                                                                                .replaceWith(
-                                                                                    confirmation_content
-                                                                                );
-                                                                            jQuery(document)
-                                                                                .scrollTop(jQuery(
-                                                                                        '#gf_3')
-                                                                                    .offset().top -
-                                                                                    mt);
-                                                                            jQuery(document)
-                                                                                .trigger(
-                                                                                    'gform_confirmation_loaded',
-                                                                                    [3]);
-                                                                            window[
-                                                                                    'gf_submitting_3'
-                                                                                    ] =
-                                                                                false;
-                                                                        }, 50);
                                                                     } else {
-                                                                        jQuery('#gform_3').append(contents);
-                                                                        if (window['gformRedirect']) {
-                                                                            gformRedirect();
-                                                                        }
+                                                                        jQuery('#gform_wrapper_3')
+                                                                            .removeClass(
+                                                                                'gform_validation_error'
+                                                                                );
                                                                     }
+                                                                    setTimeout(function () {
+                                                                        /* delay the scroll by 50 milliseconds to fix a bug in chrome */
+                                                                        jQuery(document)
+                                                                            .scrollTop(jQuery(
+                                                                                    '#gform_wrapper_3'
+                                                                                    ).offset()
+                                                                                .top - mt);
+                                                                    }, 50);
+                                                                    if (window['gformInitDatepicker']) {
+                                                                        gformInitDatepicker();
+                                                                    }
+                                                                    if (window[
+                                                                        'gformInitPriceFields']) {
+                                                                        gformInitPriceFields();
+                                                                    }
+                                                                    var current_page = jQuery(
+                                                                        '#gform_source_page_number_3'
+                                                                        ).val();
+                                                                    gformInitSpinner(3,
+                                                                        'https://cloto.ca/wp-content/plugins/cloto/img/Ajax-loader.gif'
+                                                                        );
                                                                     jQuery(document).trigger(
-                                                                        'gform_post_render', [3,
+                                                                        'gform_page_loaded', [3,
                                                                             current_page
                                                                         ]);
-                                                                });
+                                                                    window['gf_submitting_3'] = false;
+                                                                } else if (!is_redirect) {
+                                                                    var confirmation_content = jQuery(
+                                                                        this).contents().find(
+                                                                        '.GF_AJAX_POSTBACK').html();
+                                                                    if (!confirmation_content) {
+                                                                        confirmation_content = contents;
+                                                                    }
+                                                                    setTimeout(function () {
+                                                                        jQuery(
+                                                                                '#gform_wrapper_3')
+                                                                            .replaceWith(
+                                                                                confirmation_content
+                                                                                );
+                                                                        jQuery(document)
+                                                                            .scrollTop(jQuery(
+                                                                                    '#gf_3')
+                                                                                .offset().top -
+                                                                                mt);
+                                                                        jQuery(document)
+                                                                            .trigger(
+                                                                                'gform_confirmation_loaded',
+                                                                                [3]);
+                                                                        window[
+                                                                                'gf_submitting_3'] =
+                                                                            false;
+                                                                    }, 50);
+                                                                } else {
+                                                                    jQuery('#gform_3').append(contents);
+                                                                    if (window['gformRedirect']) {
+                                                                        gformRedirect();
+                                                                    }
+                                                                }
+                                                                jQuery(document).trigger(
+                                                                    'gform_post_render', [3,
+                                                                        current_page
+                                                                    ]);
+                                                            });
                                                         });
                                                     </script>
                                                     <script type='text/javascript'>
@@ -786,8 +793,7 @@
                                                     <script type='text/javascript'>
                                                         jQuery(document).ready(function () {
                                                             jQuery(document).trigger('gform_post_render', [3,
-                                                                1
-                                                            ])
+                                                                1])
                                                         });
                                                     </script>
                                                 </div>
@@ -907,111 +913,109 @@
                                                         jQuery(document).ready(function ($) {
                                                             gformInitSpinner(4,
                                                                 'https://cloto.ca/wp-content/plugins/cloto/img/Ajax-loader.gif'
-                                                            );
+                                                                );
                                                             jQuery('#gform_ajax_frame_4').on('load',
-                                                                function () {
-                                                                    var contents = jQuery(this).contents()
-                                                                        .find('*').html();
-                                                                    var is_postback = contents.indexOf(
-                                                                        'GF_AJAX_POSTBACK') >= 0;
-                                                                    if (!is_postback) {
-                                                                        return;
-                                                                    }
-                                                                    var form_content = jQuery(this)
-                                                                        .contents().find(
-                                                                            '#gform_wrapper_4');
-                                                                    var is_confirmation = jQuery(this)
-                                                                        .contents().find(
-                                                                            '#gform_confirmation_wrapper_4')
-                                                                        .length > 0;
-                                                                    var is_redirect = contents.indexOf(
-                                                                        'gformRedirect(){') >= 0;
-                                                                    var is_form = form_content.length > 0 &&
-                                                                        !is_redirect && !is_confirmation;
-                                                                    var mt = parseInt(jQuery('html').css(
-                                                                        'margin-top'), 10) + parseInt(
-                                                                        jQuery('body').css(
-                                                                            'margin-top'), 10) + 100;
-                                                                    if (is_form) {
-                                                                        jQuery('#gform_wrapper_4').html(
-                                                                            form_content.html());
-                                                                        if (form_content.hasClass(
-                                                                                'gform_validation_error')) {
-                                                                            jQuery('#gform_wrapper_4')
-                                                                                .addClass(
-                                                                                    'gform_validation_error'
+                                                        function () {
+                                                                var contents = jQuery(this).contents()
+                                                                    .find('*').html();
+                                                                var is_postback = contents.indexOf(
+                                                                    'GF_AJAX_POSTBACK') >= 0;
+                                                                if (!is_postback) {
+                                                                    return;
+                                                                }
+                                                                var form_content = jQuery(this)
+                                                                    .contents().find(
+                                                                    '#gform_wrapper_4');
+                                                                var is_confirmation = jQuery(this)
+                                                                    .contents().find(
+                                                                        '#gform_confirmation_wrapper_4')
+                                                                    .length > 0;
+                                                                var is_redirect = contents.indexOf(
+                                                                    'gformRedirect(){') >= 0;
+                                                                var is_form = form_content.length > 0 &&
+                                                                    !is_redirect && !is_confirmation;
+                                                                var mt = parseInt(jQuery('html').css(
+                                                                    'margin-top'), 10) + parseInt(
+                                                                    jQuery('body').css(
+                                                                    'margin-top'), 10) + 100;
+                                                                if (is_form) {
+                                                                    jQuery('#gform_wrapper_4').html(
+                                                                        form_content.html());
+                                                                    if (form_content.hasClass(
+                                                                            'gform_validation_error')) {
+                                                                        jQuery('#gform_wrapper_4')
+                                                                            .addClass(
+                                                                                'gform_validation_error'
                                                                                 );
-                                                                        } else {
-                                                                            jQuery('#gform_wrapper_4')
-                                                                                .removeClass(
-                                                                                    'gform_validation_error'
-                                                                                );
-                                                                        }
-                                                                        setTimeout(function () {
-                                                                            /* delay the scroll by 50 milliseconds to fix a bug in chrome */
-                                                                            jQuery(document)
-                                                                                .scrollTop(jQuery(
-                                                                                        '#gform_wrapper_4'
-                                                                                    ).offset()
-                                                                                    .top - mt);
-                                                                        }, 50);
-                                                                        if (window['gformInitDatepicker']) {
-                                                                            gformInitDatepicker();
-                                                                        }
-                                                                        if (window[
-                                                                                'gformInitPriceFields']) {
-                                                                            gformInitPriceFields();
-                                                                        }
-                                                                        var current_page = jQuery(
-                                                                            '#gform_source_page_number_4'
-                                                                        ).val();
-                                                                        gformInitSpinner(4,
-                                                                            'https://cloto.ca/wp-content/plugins/cloto/img/Ajax-loader.gif'
-                                                                        );
-                                                                        jQuery(document).trigger(
-                                                                            'gform_page_loaded', [4,
-                                                                                current_page
-                                                                            ]);
-                                                                        window['gf_submitting_4'] = false;
-                                                                    } else if (!is_redirect) {
-                                                                        var confirmation_content = jQuery(
-                                                                            this).contents().find(
-                                                                            '.GF_AJAX_POSTBACK').html();
-                                                                        if (!confirmation_content) {
-                                                                            confirmation_content = contents;
-                                                                        }
-                                                                        setTimeout(function () {
-                                                                            jQuery(
-                                                                                    '#gform_wrapper_4'
-                                                                                    )
-                                                                                .replaceWith(
-                                                                                    confirmation_content
-                                                                                );
-                                                                            jQuery(document)
-                                                                                .scrollTop(jQuery(
-                                                                                        '#gf_4')
-                                                                                    .offset().top -
-                                                                                    mt);
-                                                                            jQuery(document)
-                                                                                .trigger(
-                                                                                    'gform_confirmation_loaded',
-                                                                                    [4]);
-                                                                            window[
-                                                                                    'gf_submitting_4'
-                                                                                    ] =
-                                                                                false;
-                                                                        }, 50);
                                                                     } else {
-                                                                        jQuery('#gform_4').append(contents);
-                                                                        if (window['gformRedirect']) {
-                                                                            gformRedirect();
-                                                                        }
+                                                                        jQuery('#gform_wrapper_4')
+                                                                            .removeClass(
+                                                                                'gform_validation_error'
+                                                                                );
                                                                     }
+                                                                    setTimeout(function () {
+                                                                        /* delay the scroll by 50 milliseconds to fix a bug in chrome */
+                                                                        jQuery(document)
+                                                                            .scrollTop(jQuery(
+                                                                                    '#gform_wrapper_4'
+                                                                                    ).offset()
+                                                                                .top - mt);
+                                                                    }, 50);
+                                                                    if (window['gformInitDatepicker']) {
+                                                                        gformInitDatepicker();
+                                                                    }
+                                                                    if (window[
+                                                                        'gformInitPriceFields']) {
+                                                                        gformInitPriceFields();
+                                                                    }
+                                                                    var current_page = jQuery(
+                                                                        '#gform_source_page_number_4'
+                                                                        ).val();
+                                                                    gformInitSpinner(4,
+                                                                        'https://cloto.ca/wp-content/plugins/cloto/img/Ajax-loader.gif'
+                                                                        );
                                                                     jQuery(document).trigger(
-                                                                        'gform_post_render', [4,
+                                                                        'gform_page_loaded', [4,
                                                                             current_page
                                                                         ]);
-                                                                });
+                                                                    window['gf_submitting_4'] = false;
+                                                                } else if (!is_redirect) {
+                                                                    var confirmation_content = jQuery(
+                                                                        this).contents().find(
+                                                                        '.GF_AJAX_POSTBACK').html();
+                                                                    if (!confirmation_content) {
+                                                                        confirmation_content = contents;
+                                                                    }
+                                                                    setTimeout(function () {
+                                                                        jQuery(
+                                                                                '#gform_wrapper_4')
+                                                                            .replaceWith(
+                                                                                confirmation_content
+                                                                                );
+                                                                        jQuery(document)
+                                                                            .scrollTop(jQuery(
+                                                                                    '#gf_4')
+                                                                                .offset().top -
+                                                                                mt);
+                                                                        jQuery(document)
+                                                                            .trigger(
+                                                                                'gform_confirmation_loaded',
+                                                                                [4]);
+                                                                        window[
+                                                                                'gf_submitting_4'] =
+                                                                            false;
+                                                                    }, 50);
+                                                                } else {
+                                                                    jQuery('#gform_4').append(contents);
+                                                                    if (window['gformRedirect']) {
+                                                                        gformRedirect();
+                                                                    }
+                                                                }
+                                                                jQuery(document).trigger(
+                                                                    'gform_post_render', [4,
+                                                                        current_page
+                                                                    ]);
+                                                            });
                                                         });
                                                     </script>
                                                     <script type='text/javascript'>
@@ -1025,8 +1029,7 @@
                                                     <script type='text/javascript'>
                                                         jQuery(document).ready(function () {
                                                             jQuery(document).trigger('gform_post_render', [4,
-                                                                1
-                                                            ])
+                                                                1])
                                                         });
                                                     </script>
                                                 </div>
@@ -1041,6 +1044,7 @@
             </div>
         </div>
     </div>
+<!-- 
     <div data-elementor-type="popup" data-elementor-id="410" class="elementor elementor-410 elementor-location-popup"
         data-elementor-settings="{&quot;triggers&quot;:{&quot;exit_intent&quot;:&quot;yes&quot;},&quot;timing&quot;:{&quot;times&quot;:&quot;yes&quot;,&quot;logged_in&quot;:&quot;yes&quot;,&quot;times_count&quot;:&quot;close&quot;,&quot;times_times&quot;:3,&quot;logged_in_users&quot;:&quot;all&quot;}}">
         <div class="elementor-inner">
@@ -1221,13 +1225,16 @@
             </div>
         </div>
     </div>
-    <link rel='stylesheet' id='elementor-post-437-css' href='{{"/css/post-437.css?ver=1580175331" | relURL }}'
-        type='text/css' media='all' />
+     -->
+    <link rel='stylesheet' id='elementor-post-437-css'
+        href='{{"/css/post-437.css?ver=1580175331" | relURL }}' type='text/css'
+        media='all' />
     <script type='text/javascript' src='{{"/js/imagesloaded.min.js?ver=3.2.0" | relURL }}'></script>
-    <script type='text/javascript' src='{{"/js/magnific-popup.min.js?ver=1.1.0" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/magnific-popup.min.js?ver=1.1.0" | relURL }}'>
     </script>
     <script type='text/javascript'
-        src='https://cloto.ca/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=1.6.4'></script>
+        src='{{"/js/lightbox.min.js?ver=1.6.4" | relURL }}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var oceanwpLocalize = {
@@ -1248,11 +1255,14 @@
     <!--[if lt IE 9]>
 <script type='text/javascript' src='https://cloto.ca/wp-content/themes/oceanwp/assets/js//third/html5.min.js?ver=1.6.4'></script>
 <![endif]-->
-    <script type='text/javascript' src='{{"/js/jquery.smartmenus.min.js?ver=1.0.1" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/jquery.smartmenus.min.js?ver=1.0.1" | relURL }}'>
     </script>
-    <script type='text/javascript' src='{{"/js/timeline.min.js?ver=1.0.0" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/timeline.min.js?ver=1.0.0" | relURL }}'>
     </script>
-    <script type='text/javascript' src='{{"/js/jquery.json.min.js?ver=2.4.20" | relURL }}'></script>
+    <script type='text/javascript'
+        src='{{"/js/jquery.json.min.js?ver=2.4.20" | relURL }}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var gf_global = {
@@ -1355,14 +1365,17 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='{{"/js/gravityforms.min.js?ver=2.4.20" | relURL }}'></script>
-    <script type='text/javascript' src='{{"/js/frontend-modules.min.js?ver=2.8.5" | relURL }}'></script>
-    <script type='text/javascript' src='{{"/js/jquery.sticky.min.js?ver=2.8.3" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/gravityforms.min.js?ver=2.4.20" | relURL }}'></script>
+    <script type='text/javascript'
+        src='{{"/js/frontend-modules.min.js?ver=2.8.5" | relURL }}'></script>
+    <script type='text/javascript'
+        src='{{"/js/jquery.sticky.min.js?ver=2.8.3" | relURL }}'>
     </script>
     <script type='text/javascript'>
         var ElementorProFrontendConfig = {
             "ajaxurl": "https:\/\/cloto.ca\/wp-admin\/admin-ajax.php",
-            "nonce": "a0dea52c6e",
+            "nonce": "9f3723030e",
             "shareButtonsNetworks": {
                 "facebook": {
                     "title": "Facebook",
@@ -1439,14 +1452,14 @@
         };
     </script>
     <script type='text/javascript'
-        src='https://cloto.ca/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=2.8.3'></script>
-    <script type='text/javascript' src='https://cloto.ca/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+        src='{{"/js/frontend.min1.js?ver=2.8.3" | relURL }}'></script>
+    <script type='text/javascript' src='{{"/js/position.min.js?ver=1.11.4" | relURL }}'></script>
     <script type='text/javascript'
-        src='https://cloto.ca/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.7.3'></script>
+        src='{{"/js/dialog.min.js?ver=4.7.3" | relURL }}'></script>
     <script type='text/javascript'
-        src='https://cloto.ca/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'></script>
+        src='{{"/js/waypoints.min.js?ver=4.0.2" | relURL }}'></script>
     <script type='text/javascript'
-        src='https://cloto.ca/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=4.4.6'></script>
+        src='{{"/js/swiper.min.js?ver=4.4.6" | relURL }}'></script>
     <script type='text/javascript'>
         var elementorFrontendConfig = {
             "environmentMode": {
@@ -1496,9 +1509,11 @@
             }
         };
     </script>
-    <script type='text/javascript' src='{{"/js/frontend.min.js?ver=2.8.5" | relURL }}'></script>
-    <script type='text/javascript' src='{{"/js/frontend.min.js?ver=1.1.0" | relURL }}'></script>
-    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script type='text/javascript'
+        src='{{"/js/frontend.min2.js?ver=2.8.5" | relURL }}'></script>
+    <script type='text/javascript'
+        src='{{"/js/frontend3.min.js?ver=1.1.0" | relURL }}'></script>
+    <script type='text/javascript' src='{{"/js/TweenMax.min.js" | relURL }}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var elementorExtrasFrontendConfig = {
@@ -1508,22 +1523,29 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='{{"/js/frontend.min.js?ver=2.0.14" | relURL }}'></script>
-    <script type='text/javascript' src='{{"/js/hc-sticky.min.js?ver=2.2.3" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/frontend.min4.js?ver=2.0.14" | relURL }}'></script>
+    <script type='text/javascript'
+        src='{{"/js/hc-sticky.min.js?ver=2.2.3" | relURL }}'>
     </script>
-    <script type='text/javascript' src='{{"/js/jquery.resize.min.js?ver=3.0.2" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/jquery.resize.min.js?ver=3.0.2" | relURL }}'>
     </script>
-    <script type='text/javascript' src='{{"/js/parallax-element.min.js?ver=1.0.0" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/parallax-element.min.js?ver=1.0.0" | relURL }}'>
     </script>
-    <script type='text/javascript' src='{{"/js/jquery.visible.min.js?ver=1.0.0" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/jquery.visible.min.js?ver=1.0.0" | relURL }}'>
     </script>
-    <script type='text/javascript' src='{{"/parallax-background.min.js?ver=1.2.0" | relURL }}'>
+    <script type='text/javascript'
+        src='{{"/js/parallax-background.min.js?ver=1.2.0" | relURL }}'>
     </script>
-    <script type='text/javascript' src='{{"/pp-bg-effects.js?ver=1.0.0" | relURL }}'></script>
+    <script type='text/javascript'
+        src='{{"/js/pp-bg-effects.js?ver=1.0.0" | relURL }}'></script>
 </body>
 
 </html>
-<!-- Dynamic page generated in 1.343 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2020-09-14 12:51:37 -->
+<!-- Dynamic page generated in 1.096 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-09-15 04:51:36 -->
 
 <!-- super cache -->
